@@ -1,0 +1,51 @@
+/* challenge-defined rule sets */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-inline: 2rem;
+}
+
+/* card */
+
+.card {
+    width: 100%;
+    max-width: 24rem;
+    border: 1px solid black;
+}
+
+.card-inside {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* card items */
+figure {
+    margin: 0 auto;
+    width: 176px;
+    height: 176px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+}
