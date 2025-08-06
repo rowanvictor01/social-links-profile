@@ -1,51 +1,103 @@
 /* challenge-defined rule sets */
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 /* basic reset */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
 }
 
 /* container */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-inline: 2rem;
 }
 
 /* card */
 
 .card {
-    width: 100%;
-    max-width: 24rem;
-    border: 1px solid black;
+  width: clamp(280px, 80vw, 24rem);
+  border-radius: 16px;
+  padding: 3rem 0;
+  background-color: hsl(0, 0%, 12%);
 }
 
 .card-inside {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* card items */
 figure {
-    margin: 0 auto;
-    width: 176px;
-    height: 176px;
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+h1 {
+  margin-bottom: calc(1rem - 8px);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+
+h1 + p {
+  margin-bottom: calc(2rem - 2px);
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
 }
 
 .card-buttons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  width: 18.75rem;
+  height: 3.125rem;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.8s ease-out;
+}
+
+button:hover {
+  color: hsl(75, 94%, 57%);
+  background-color: hsl(0, 0%, 30%);
+}
+
+p {
+  font-size: 14px;
 }
