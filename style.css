@@ -34,11 +34,12 @@ main {
 
 .card {
   /* custom property for p elements */
-  --paragraph-size: clamp(14px, 3vw, 16px);
+  --paragraph-size: clamp(12px, 3vw, 16px);
 
   width: clamp(280px, 80vw, 24rem);
   border-radius: 16px;
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
+  padding: clamp(1.5rem, 3.5vw, 4rem) 0;
   background-color: hsl(0, 0%, 12%);
 }
 
@@ -86,15 +87,14 @@ button {
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
   width: clamp(240px, 62vw, 320px);
-  height: 3.125rem;
+  padding: clamp(0.92rem, 0.95vw, 1.2rem) 0;
+  font-size: clamp(0.875rem, 1.1vw, 1.125rem);
   border: 0;
   border-radius: 10px;
   text-align: center;
   font-weight: 600;
   cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    color 0.8s ease-out;
+  transition: background-color 0.3s ease, color 0.8s ease-out;
 }
 
 button:hover {
